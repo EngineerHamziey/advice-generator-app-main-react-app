@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --mobile-max-with: 30rem;
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  line-height: 1.4;
+  padding: 2rem;
+  font-size: 1.75rem;
+  color: var(--Light-Cyan);
+  background-color: var(--Dark-Blue);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  font-size: 0.85rem;
+  color: var(--Neon-Green);
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  max-width: var(--mobile-max-with);
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 0.5rem;
+}
+
+.img--pattern {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.btn-advice {
+  display: inline-block;
+  display: block;
+  background-color: var(--Neon-Green);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border-color: transparent;
+  position: absolute;
+  top: 92%;
+}
+
+
+
+.btn-icon {
+  /* display: inline-block; */
+}
+
+
+.attribution {
+  margin-top: 4rem;
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }
