@@ -8,8 +8,11 @@
 # testing
 /coverage
 
+#design files
+/Starter-files
+
 # production
-/build
+# /build
 
 # misc
 .DS_Store
