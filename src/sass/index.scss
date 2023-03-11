@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
 * {
   margin: 0; 
   padding: 0;
@@ -17,7 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
+  font-family: Manrope, sans-serif;
   line-height: 1.4;
   padding: 2rem;
   font-size: 1.75rem;
@@ -39,7 +41,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 3.5rem 2rem;
   margin-top: 3rem;
   max-width: $mobile-max-with;
   background-color: $Dark-Grayish-Blue;
@@ -48,6 +50,7 @@ body {
   &__title {
     font-size: 0.85rem;
     color: $Neon-Green;
+    margin-bottom: 0.6rem;
   }
   
   &__pattern {

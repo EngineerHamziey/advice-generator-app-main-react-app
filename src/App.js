@@ -5,13 +5,14 @@ import { useState, useEffect } from "react";
 
 // api link: https://api.adviceslip.com/advice
 function App() {
-  
+  // https://api.adviceslip.com/advice/44
+  // https://api.adviceslip.com/advice/{id}, to get a specific id, maximum of about 200
   const [advice, setAdvice] = useState(
   
     {
       "slip": {
         "id": 0, 
-        "advice": ""
+        "advice": "Click the green dice to generate a new advice"
       }
     }
   )
