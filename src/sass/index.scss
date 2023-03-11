@@ -39,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 4rem 2rem;
   margin-top: 3rem;
   max-width: $mobile-max-with;
   background-color: $Dark-Grayish-Blue;
@@ -105,8 +105,11 @@ body {
 }
 
 
-@media screen and (min-width: 700px) {
-  body {
-    // display: none;
+@media screen and (min-width: 500px) {
+  .card {
+
+    &__pattern {
+      content: url(./images/patternDividerDesktop.svg);
+    }
   }
 }
