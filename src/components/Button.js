@@ -1,10 +1,10 @@
 import iconDice from "../images/iconDice.svg"
 
-const Button = () => {
+const Button = ({ onPress }) => {
   return (
     
-    <button className='btn-advice'>
-      <img className="btn-icon" src={iconDice} alt="" />
+    <button className='btn btn--advice' onClick={onPress}>
+      <img className="btn__icon" src={iconDice} alt="" />
     </button>
     
   )
